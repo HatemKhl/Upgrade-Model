@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broadband Upgrade Model Preview</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f7fb; color: #0f172a; }
+      main { max-width: 920px; margin: 8vh auto; padding: 32px; background: white; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 16px 45px rgb(15 23 42 / 6%); }
+      h1 { margin: 0 0 12px; }
+      p { color: #475569; line-height: 1.55; }
+      code { background: #eef2ff; color: #1d4ed8; padding: 2px 6px; border-radius: 6px; }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+      .card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; background: #f8fafc; }
+      .card strong { display: block; margin-bottom: 6px; }
+      @media (max-width: 720px) { main { margin: 0; min-height: 100vh; border-radius: 0; } .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Broadband Upgrade Financial Model</h1>
+      <p>The full app is the React/TypeScript Vite project in this repository. Install dependencies and run the local dev server to use the interactive dashboard, editable assumptions, charts, and approval workflow.</p>
+      <p><code>npm install</code> then <code>npm run dev</code></p>
+      <div class="grid">
+        <div class="card"><strong>DOCSIS 3.1 High-Split</strong><span>$100 capex / home passed, 2 Gbps downstream, 1 Gbps user-facing upstream.</span></div>
+        <div class="card"><strong>DOCSIS 4.0 HFC</strong><span>$250 capex / home passed, 10 Gbps downstream, 6 Gbps upstream.</span></div>
+        <div class="card"><strong>FTTH XGS-PON</strong><span>$1,000 capex / home passed, 10 Gbps shared downstream and upstream.</span></div>
+      </div>
+    </main>
+  </body>
+</html>
